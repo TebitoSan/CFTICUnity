@@ -8,6 +8,7 @@ public class TuberiasScript : MonoBehaviour {
     GameObject gestorJuego;
 	
 	void Start () {
+        transform.Translate(0, Random.Range(-2, 2), 0);
         gestorJuego = GameObject.Find("GestorJuego");
         Destroy(this.gameObject, timeToDestroy);
 	}
